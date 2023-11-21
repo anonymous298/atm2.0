@@ -6,7 +6,8 @@ def atm_card():
 
     else:
         print("Get lost from here!")
-
+        
+# function to create a pin in atm
 def pin():
     user_pin = int(input("Enter your 4 digits atm pin: "))
     pin = 1807
@@ -15,11 +16,13 @@ def pin():
         atm_options()
     else:
         raise ValueError("Your atm is blocked!")
-    
+        
+# function to create options that will show on atm
 def atm_options():
+    
+    # initiliazing balance
     balance = 0
     for i in range(0,50):
-
 
             print("\n(1 for withdrawal)")
             print("(2 for deposit)")
@@ -71,6 +74,7 @@ def atm_options():
     else:
         print("enter yes or no")
 
+# calling main function
 atm_card()
 
     
